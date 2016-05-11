@@ -33,6 +33,20 @@ footer
    text-align: left;
 }
 
+input
+{
+  background-color: rgba(71,78,93,0.5);
+}
+
+textarea 
+{
+    resize: none;
+    background-color: rgba(71,78,93,0.5);
+    font-size: 18px;
+    width: 350px;
+    text-align: center;
+}
+
 
 .form-group > .form-control
 {
@@ -48,7 +62,7 @@ footer
 
 #clock {
 	text-align: left;
-	font-size: 10;
+	font-size: 40px;
 	margin: 0;
 	padding-top: 100;
   font-family: 'ProFont';
