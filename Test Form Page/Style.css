@@ -1,11 +1,11 @@
 @font-face {
-	font-family: 'montecarlo';
-	src: url('Fonts/montecarlo.ttf');
+	font-family: 'ProFont';
+	src: url('Fonts/ProFont.ttf');
 }
 
 html 
 {
-	font-family: 'montecarlo';
+	font-family: 'ProFont';
 }
 
 body 
@@ -13,16 +13,17 @@ body
   background: rgba(71,78,93,1)url('Images/Background.png') no-repeat bottom fixed;
   background-size: cover; 
   color: #000;
-  font-family: 'montecarlo';
+  font-family: 'ProFont';
 }
 
 div.container-fluid
 {
-	margin-top: 50px;
-	padding: 40px;
-  font-size: 40;
+	margin-top: 0px;
+	padding: 10px;
   color: white;
 }
+
+
 
 footer
 {
@@ -34,46 +35,12 @@ footer
    text-align: left;
 }
 
-.panel > .panel-heading 
-{
-    background-image: none;
-    background-color: rgba(71,78,93,0.5);
-    color: white;
-
-}
-
-.panel > .panel-footer 
-{
-    background-image: none;
-    color: black;
-
-}
-
-.list-group > .list-group-item 
-{
-    background-image: none;
-    background-color: rgba(71,78,93,0.5);
-    color: white;
-}
-
-.form-group > .get
-{
-    background-color: rgba(71,78,93,0.5);
-    color: white;
-}
-
-form > .form-control
-{
-    background-color: rgba(71,78,93,0.5);
-    color: white;
-}
-
 #clock {
 	text-align: left;
 	font-size: 10;
 	margin: 0;
-	padding-top: 144;
-  font-family: 'montecarlo';
+	padding-top: 100;
+  font-family: 'ProFont';
 }
 
 .bg-1 
