@@ -1,30 +1,27 @@
 @font-face {
-	font-family: 'Montecarlo';
+	font-family: 'montecarlo';
 	src: url('Fonts/montecarlo.ttf');
-}
-
-@font-face {
-  font-family: 'Consola';
-  src: url('Fonts/consola.ttf');
 }
 
 html 
 {
-	font-family: 'Consola';
+	font-family: 'montecarlo';
 }
 
 body 
 { 
-  background: rgba(71,78,93,1)url('Images/Background.jpg') no-repeat bottom fixed;
+  background: rgba(71,78,93,1)url('Images/Background.png') no-repeat bottom fixed;
   background-size: cover; 
   color: #000;
-  font-family: 'Consola';
+  font-family: 'montecarlo';
 }
 
 div.container-fluid
 {
 	margin-top: 50px;
 	padding: 40px;
+  font-size: 40;
+  color: white;
 }
 
 footer
@@ -73,10 +70,10 @@ form > .form-control
 
 #clock {
 	text-align: left;
-	font-size: 56;
+	font-size: 10;
 	margin: 0;
 	padding-top: 144;
-  font-family: 'Montecarlo';
+  font-family: 'montecarlo';
 }
 
 .bg-1 
