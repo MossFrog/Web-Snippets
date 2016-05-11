@@ -23,8 +23,6 @@ div.container-fluid
   color: white;
 }
 
-
-
 footer
 {
    position: fixed;
@@ -33,6 +31,19 @@ footer
    height:100px;
    width:100%;
    text-align: left;
+}
+
+
+.form-group > .form-control
+{
+    background-color: rgba(71,78,93,0.5);
+    color: white;
+}
+
+.btn
+{
+    background-color: rgba(71,78,93,0.5);
+    color: white;
 }
 
 #clock {
