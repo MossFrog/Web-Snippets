@@ -38,6 +38,19 @@ input
   background-color: rgba(71,78,93,0.5);
 }
 
+input.invalid, textarea.invalid{
+  border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+  border: 2px solid green;
+}
+
+button
+{
+  background-color: rgba(71,78,93,0.5);
+}
+
 textarea 
 {
     resize: none;
@@ -45,6 +58,19 @@ textarea
     font-size: 18px;
     width: 350px;
     text-align: center;
+}
+
+
+.error{
+  display: none;
+  margin-left: 10px;
+}   
+
+.error_show{
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  background-color: rgba(0, 255, 255, 0.5);
 }
 
 

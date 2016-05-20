@@ -7,17 +7,22 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- JQuery -->
+  <script src="jquery-1.12.3.min.js"></script>
 
   <!-- Script for the clock -->
   <script src="Source/Clock.js"></script>
 
   <!-- Main style sheet -->
   <link rel="stylesheet" type="text/css" href="Style.css"/>
+
+  <!-- Script input control -->
+  <script src="Source/Main.js"></script>
+
+  
 
  </head>
 
@@ -36,61 +41,72 @@
   </header>
 
 
-  <form action="Deliver_Package.php" autocomplete="off">
+  <form action="" autocomplete="off" id="contact_form" method="post">
 
   <div class="container-fluid">
-
-    
     <div class="col-sm-2">
     First name:<br>
-    <input type="text" name="firstname" value="" autofocus=true ><br><br>
+    <input type="text" id="firstname" name="firstname" value="" autofocus=true></input>
+    <span class="error">Please do not leave blank.</span> 
+    <br><br>
     </div>
+
+
 
 
     <div class="col-sm-2">
+    <div>
     Last name:<br>
-    <input type="text" name="lastname" value=""><br><br>
-
+    <input type="text" name="lastname" id="lastname" value=""></input>
+    <span class="error">Please do not leave blank.</span> 
+    <br><br>
+    </div>
     </div>
 
-    
-    
+    <div>
+    <div class="col-sm-2">
+    E-Mail:<br>
+    <input type="email" name="email_section" id="email_section" value="" size="35" title="Valid E-mail Address"></input>
+    <span class="error">Please enter a valid e-mail address.</span> 
+    <br><br>
+
+    </div>
+    </div>
+
 
   </div>
-
-  
 
   <div class="container-fluid">
     <h1>Nature of complaint</h1>
     
-      <input type="radio" name="optradio"> Software Error<br>
+      <input type="radio" name="optradio"  checked> Software Error<br>
       <input type="radio" name="optradio"> Hardware Failure<br>
       <input type="radio" name="optradio"> Network Issue<br>  
       <input type="radio" name="optradio"> Other<br>
-
-
+      <span class="error">Please do not leave un-selected.</span> 
   </div>
-
 
   <div class="container-fluid">
-  <div class="col-sm-3">
-  <h3>State your complaint.<h3>
-  <textarea rows="7" id="comment"></textarea>
-  </div>
+    <div class="col-sm-3">
+    <h3>State your complaint.<h3>
+    <textarea rows="7" id="comment" scalable></textarea>
+    <span class="error"> We value your feedback, a blank message is of no use to both parties. </span>
+    </div>
   </div>
 
   <div class="container-fluid">
   
-  <input type="checkbox" value=""> I Agree to the terms of service. <br><br>
-  <input type="submit" value="Submit">
+  <input type="checkbox" value="" name="agreetick" id="agreetick"> I Agree to the terms of service.
+  <span class="error">You must agree to continue.</span> 
+  <br><br>
+
+  <div id="submit_button">       
+    <button type="submit">Submit</button>
+  </div>
 
   </div>
 
   </form>
-
 </body>
-
-
-
 
 </html>
