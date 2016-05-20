@@ -43,7 +43,7 @@ input.invalid, textarea.invalid{
 }
 
 input.valid, textarea.valid{
-  border: 2px solid green;
+  border: 2px solid rgba(0, 255, 255, 0.5);
 }
 
 button
