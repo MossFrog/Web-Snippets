@@ -8,12 +8,25 @@ html
 	font-family: 'ProFont';
 }
 
+td
+{
+  font-size: 18px;
+}
+
+mark
+{
+  background-color: rgb(71,78,93);
+  color: white;
+}
+
+
 body 
 { 
   background: rgba(71,78,93,1)url('Images/Background.png') no-repeat bottom fixed;
   background-size: cover; 
   color: #000;
   font-family: 'ProFont';
+  color: white;
 }
 
 div.container-fluid
@@ -93,6 +106,40 @@ textarea
 	padding-top: 100;
   font-family: 'ProFont';
 }
+
+#adminLink 
+{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#submit 
+{
+  color: white;
+  font-family: 'ProFont';
+}
+
+#username 
+{
+  color: white;
+  font-family: 'ProFont';
+}
+
+
+#password 
+{
+  color: white;
+  font-family: 'ProFont';
+}
+
+#post_id_box
+{
+  color: white;
+  font-family: 'ProFont';
+  font-size: 12px;
+}
+
 
 .bg-1 
 {

@@ -2,6 +2,8 @@
 <html>
 <title>Test Form</title>
 
+  <!-- This is an example of a well formatted form that posts data to an external PHP script. -->
+
  <head>
 
   <!-- Latest compiled and minified CSS -->
@@ -68,7 +70,7 @@
     E-Mail:<br>
     <input type="email" name="email_section" id="email_section" value="" size="35" title="Valid E-mail Address"></input>
     <span class="error">Please enter a valid e-mail address.</span> 
-    <br><br>
+    <br>
 
     </div>
     </div>
@@ -88,8 +90,8 @@
 
   <div class="container-fluid">
     <div class="col-sm-3">
-    <h3>State your complaint.<h3>
-    <textarea rows="7" id="comment" name="comment" scalable form="contact_form"></textarea>
+    <h3>State your complaint.</h3>
+    <textarea rows="7" id="comment" name="comment" scalable form="contact_form" maxlength="200"></textarea>
     <span class="error"> We value your feedback, a blank message is of no use to both parties. </span>
     </div>
   </div>
@@ -107,6 +109,12 @@
   </div>
 
   </form>
+
+  <a id="adminLink" href="Login.html">Admin Access</a>
+
+
 </body>
+
+
 
 </html>
