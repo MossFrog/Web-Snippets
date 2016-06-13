@@ -41,7 +41,7 @@
   </header>
 
 
-  <form action="dbScript.php" autocomplete="off" id="contact_form" method="get">
+  <form action="dbScript.php" autocomplete="off" id="contact_form" method="post">
 
   <div class="container-fluid">
     <div class="col-sm-2">
@@ -79,17 +79,17 @@
   <div class="container-fluid">
     <h1>Nature of complaint</h1>
     
-      <input type="radio" name="optradio"  checked> Software Error<br>
-      <input type="radio" name="optradio"> Hardware Failure<br>
-      <input type="radio" name="optradio"> Network Issue<br>  
-      <input type="radio" name="optradio"> Other<br>
+      <input type="radio" name="optradio" value="Software Error" checked> Software Error<br>
+      <input type="radio" name="optradio" value="Hardware Failure"> Hardware Failure<br>
+      <input type="radio" name="optradio" value="Network Issue"> Network Issue<br>  
+      <input type="radio" name="optradio" value="Other"> Other<br>
       <span class="error">Please do not leave un-selected.</span> 
   </div>
 
   <div class="container-fluid">
     <div class="col-sm-3">
     <h3>State your complaint.<h3>
-    <textarea rows="7" id="comment" scalable></textarea>
+    <textarea rows="7" id="comment" name="comment" scalable form="contact_form"></textarea>
     <span class="error"> We value your feedback, a blank message is of no use to both parties. </span>
     </div>
   </div>

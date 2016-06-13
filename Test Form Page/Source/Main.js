@@ -88,7 +88,7 @@ $(document).ready(function()
 		}
 		else
 		{
-			alert('No errors detected: Form will be submitted. (No backend script in place, will be provided upon request.');
+			alert('No errors detected: Form will be submitted.');
 		}
 
 
